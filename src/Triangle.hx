@@ -53,7 +53,7 @@ class Triangle implements hxbit.Serializable {
     @:keep
     public function customUnserialize(ctx : hxbit.Serializer) {
         bitLength = ctx.getInt();
-        trace( 'bitLength ' + bitLength + ' ' + ALPHA );
+        if( bitLength == 0 ) return;
         if( contains( bitLength, ALPHA ) )      alpha       = ctx.getFloat();
         if( contains( bitLength, COLOR_ID ) )   colorID     = ctx.getInt();
         if( contains( bitLength, TEXTURE_ID ) ) textureID   = ctx.getInt();
