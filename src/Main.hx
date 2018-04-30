@@ -13,15 +13,16 @@ class Main {
         // create data for serialization
         var triangle0 = new Triangle( 10, 10, 100, 10, 50, 100 );
         triangle0.alpha = 0.5;
+        triangle0.textureID = 1;
         var triangle1 = new Triangle( 100, 10, 200, 10, 150, 100 );
         triangle1.alpha = 0.7;
+        triangle1.colorID = 1;
         var trianglesOut = [ triangle0, triangle1 ];
         var tri: Triangle;
         for( i in 0...2 ){
             tri = new Triangle( Math.random()*500, Math.random()*500
                               , Math.random()*500, Math.random()*500
                               , Math.random()*500, Math.random()*500 );
-            tri.alpha = 0.2; // IF I COMMENT OUT THIS LINE IT BREAKS OBVIOUSLY
             trianglesOut.push( tri );
         }
         var trianglesHolder = new TrianglesHolder();
