@@ -11,7 +11,6 @@ class TriangleSimple implements hxbit.Serializable {
     @:s public var cy: Float;
     @:s public var alpha: Float = 1. ;
     @:s public var colorID: Int = 0xFF000000;
-    public var textureID: Int = -1;
     public function new( ax_: Float, ay_: Float
                        , bx_: Float, by_: Float
                        , cx_: Float, cy_: Float ){
@@ -29,6 +28,6 @@ class TriangleSimple implements hxbit.Serializable {
                             + '\n, cx: ' + cx + ' , cy: ' + cy 
                             + '\n alpha: ' + alpha 
                             + '\n colorID ' + colorID
-                            + '\n textureID ' + textureID  + '\n');
+                            + '\n');
     }
 }
