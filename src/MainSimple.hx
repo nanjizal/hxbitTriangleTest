@@ -13,7 +13,7 @@ class MainSimple {
         // create data for serialization
         var triangle0 = new Triangle( 10, 10, 100, 10, 50, 100 );
         triangle0.alpha = 0.5;
-        triangle0.textureID = 1;
+        triangle0.colorID = 1;
         var triangle1 = new Triangle( 100, 10, 200, 10, 150, 100 );
         triangle1.alpha = 0.7;
         triangle1.colorID = 1;
