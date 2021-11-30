@@ -1,0 +1,5 @@
+-cp src
+-main MainSimple
+-neko mainSimple.n
+-cmd neko mainSimple.n
+-lib hxbit
